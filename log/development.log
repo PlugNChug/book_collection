@@ -2478,3 +2478,38 @@ Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.2
   
 ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
   
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (5.0ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "price", "publish_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Hobbit"], ["author", "J.R.R. Tolkien"], ["price", "9.99"], ["publish_date", "1937-09-21"], ["created_at", "2025-09-17 16:58:54.406638"], ["updated_at", "2025-09-17 16:58:54.406638"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (1.0ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "price", "publish_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Lord of the Rings"], ["author", "J.R.R. Tolkien"], ["price", "19.99"], ["publish_date", "1954-07-29"], ["created_at", "2025-09-17 16:58:54.423307"], ["updated_at", "2025-09-17 16:58:54.423307"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (1.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "price", "publish_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Harry Potter and the Philosopher's Stone"], ["author", "J.K. Rowling"], ["price", "9.99"], ["publish_date", "1997-06-26"], ["created_at", "2025-09-17 16:58:54.434326"], ["updated_at", "2025-09-17 16:58:54.434326"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (1.0ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "price", "publish_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Harry Potter and the Chamber of Secrets"], ["author", "J.K. Rowling"], ["price", "9.99"], ["publish_date", "1998-07-02"], ["created_at", "2025-09-17 16:58:54.445772"], ["updated_at", "2025-09-17 16:58:54.445772"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "price", "publish_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Hunger Games"], ["author", "Suzanne Collins"], ["price", "9.99"], ["publish_date", "2008-09-17"], ["created_at", "2025-09-17 16:58:54.456535"], ["updated_at", "2025-09-17 16:58:54.456535"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "price", "publish_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Hunger Games: Catching Fire"], ["author", "Suzanne Collins"], ["price", "9.99"], ["publish_date", "2013-09-16"], ["created_at", "2025-09-17 16:58:54.466192"], ["updated_at", "2025-09-17 16:58:54.466192"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "price", "publish_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Hunger Games: Mockingjay"], ["author", "Suzanne Collins"], ["price", "9.99"], ["publish_date", "2014-11-18"], ["created_at", "2025-09-17 16:58:54.476683"], ["updated_at", "2025-09-17 16:58:54.476683"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/books" for 172.17.0.1 at 2025-09-17 19:07:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (2.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:17
+  Rendered books/index.html.erb within layouts/application (Duration: 70.7ms | Allocations: 9696)
+  Rendered layout layouts/application.html.erb (Duration: 786.6ms | Allocations: 26949)
+Completed 200 OK in 1033ms (Views: 816.7ms | ActiveRecord: 12.6ms | Allocations: 32177)
+
+
